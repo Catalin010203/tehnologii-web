@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+
+<body>
+    <main class="page">
+    <section class="card">
+    <h1>Register</h1>
+    <form class="register-form" action="#" method="post"
+        enctype="multipart/form-data">
+    
+        <div class="row">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="ex:ioanaTW" required>
+        </div>
+
+
+        <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="ex:ioanaTW@gmail.com" required>
+        </div>
+
+        <div class="row two-col">
+            <div>
+                <label for="password">Parolă</label>
+                <input type="password" name="password" required>
+            </div>
+            
+            <div>
+                <label for="confirm_password">Confirmă parola</label>
+                <input type="password" name="confirm_password" required>
+            </div>
+        </div>
+
+        <div> 
+            <label for="Date of birth">Date of birth</label>
+            <input type="date" name="date_of_birth" required>
+        </div>
+
+        <div class="gender-section">
+        <label class="section-label">Gen</label>
+
+        <div class="gender-options">
+                <label>
+                    <input type="radio" name="gender" value="male" required>
+                    Masculin
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Feminin
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Altul
+                </label>
+            </div>
+        </div>
+
+        <div class="country-section">
+            <label class="section-label">Country</label>
+            <select name="country" required>
+                <option value="">Selectează țara</option>
+                <option value="Romania">Romania</option>
+                <option value="USA">SUA</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="Other">Altă țară</option>
+            </select>
+        </div>
+
+        <div class="hobbies-section">
+            <label class="section-label">Hobbies</label>
+
+            <div class="hobbies-options">
+                <label>
+                    <input type="checkbox" name="hobbies" value="sports">
+                    Sports
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobbies" value="music">
+                    Music
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobbies" value="reading">
+                    Reading
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobbies" value="traveling">
+                    Traveling
+                </label>
+            </div>
+        </div>
+
+            <div class="profile-section">
+                <label class="section-label">Profile picture</label>
+                <input type="file" name="profile_picture" accept="image/*">
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="reset" class="btn ghost">Reset</button>
+            </div>
+
+        <p class="login-link"> Ai deja cont?
+
+        <a href="login.html">Mergi la login</a></p>
+
+    </form>
+    </section>
+</main>
+</body>
+</html>
+    

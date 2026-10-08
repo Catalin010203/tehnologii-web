@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #303b43;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #293842;
+    color: white;
+    border-bottom: 2px solid #bdbdbd;
+}
+
+header .container {
+    text-align: center;
+    padding: 10px 20px 14px;
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+nav a {
+    color: #d8ad3b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f0c84c;
+}
+
+main {
+    flex: 1;
+}
+
+main.container {
+    padding: 48px 0;
+}
+
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 130px;
+}
+
+
+.column {
+    background-color: white;
+
+    min-height: 135px;
+
+    padding: 15px 16px;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.column h2 {
+    font-size: 18px;
+    color: #35414a;
+    margin-bottom: 9px;
+}
+
+.column p {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 13px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    background-color: #293842;
+    color: #d8ad3b;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #354752;
+    color: #f0c84c;
+}
+
+footer {
+    background-color: #293842;
+    color: #d8d8d8;
+
+    text-align: center;
+
+    padding: 12px 20px;
+
+    border-top: 2px solid #bdbdbd;
+}
+
+footer p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #d8ad3b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f0c84c;
+}
+
+
+@media (max-width: 900px) {
+
+    .columns {
+        padding: 0 30px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .columns {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+}
