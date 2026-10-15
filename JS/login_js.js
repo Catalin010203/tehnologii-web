@@ -21,6 +21,5 @@ loginForm.addEventListener("submit", function(e) {
         return;
     }
 
-    alert("Login reusit!");
     window.location.href = "home.html";
 });
