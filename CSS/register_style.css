@@ -11,9 +11,6 @@ body {
     min-height: 100vh;
 }
 
-/* =========================
-   PAGINA
-   ========================= */
 
 .page {
     min-height: 100vh;
@@ -23,9 +20,6 @@ body {
     padding-top: 22px;
 }
 
-/* =========================
-   CARD
-   ========================= */
 
 .card {
     width: 520px;
@@ -35,9 +29,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
 
-/* =========================
-   TITLU
-   ========================= */
 
 .card h1 {
     text-align: center;
@@ -47,9 +38,6 @@ body {
     margin-bottom: 18px;
 }
 
-/* =========================
-   FORMULAR
-   ========================= */
 
 .register-form {
     width: 100%;
@@ -60,7 +48,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Label-uri principale */
 
 .row > label,
 .row div > label:first-child {
@@ -70,9 +57,6 @@ body {
     margin-bottom: 5px;
 }
 
-/* =========================
-   INPUT-URI
-   ========================= */
 
 input[type="text"],
 input[type="email"],
@@ -99,19 +83,11 @@ select:focus {
     border-color: #d7ad36;
 }
 
-/* =========================
-   PAROLA + CONFIRMARE
-   ========================= */
-
 .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px;
 }
-
-/* =========================
-   DATA NASTERII
-   ========================= */
 
 .date-section {
     width: 100%;
@@ -125,9 +101,6 @@ select:focus {
     margin-bottom: 5px;
 }
 
-/* =========================
-   GEN
-   ========================= */
 
 .gender-section {
     width: 100%;
@@ -166,9 +139,6 @@ select:focus {
     cursor: pointer;
 }
 
-/* =========================
-   COUNTRY
-   ========================= */
 
 .country-section {
     width: 100%;
@@ -186,9 +156,6 @@ select {
     cursor: pointer;
 }
 
-/* =========================
-   HOBBIES
-   ========================= */
 
 .hobbies-section {
     width: 100%;
@@ -226,10 +193,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-/* =========================
-   PROFILE PICTURE
-   ========================= */
-
 .profile-section {
     width: 100%;
     margin-bottom: 10px;
@@ -263,9 +226,6 @@ input[type="file"]::file-selector-button {
     cursor: pointer;
 }
 
-/* =========================
-   BUTOANE
-   ========================= */
 
 .actions {
     display: flex;
@@ -301,9 +261,6 @@ input[type="file"]::file-selector-button {
     background: #506579;
 }
 
-/* =========================
-   LOGIN LINK
-   ========================= */
 
 .login-link {
     text-align: center;
