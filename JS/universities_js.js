@@ -77,11 +77,8 @@ function exportCSV(data) {
 
 }
 
+const CSVbutton = document.getElementById("CSVbutton");
 
-
-
-    const CSVbutton = document.getElementById("CSVbutton");
-
-    CSVbutton.addEventListener("click", () => {
-        exportCSV(all);
-    });
+CSVbutton.addEventListener("click", () => {
+    exportCSV(all);
+});

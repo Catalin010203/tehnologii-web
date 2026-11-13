@@ -175,3 +175,26 @@ footer a:hover {
     }
 
 }
+
+
+.uvtImage-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    width: 85%;
+}
+
+.uvtImage {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.uvtImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
