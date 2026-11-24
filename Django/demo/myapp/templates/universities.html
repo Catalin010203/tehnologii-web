@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universities</title>
-    <link rel="stylesheet" href="../CSS/universities_style.css">
+    <link rel="stylesheet" href="{% static 'CSS/universities_style.css' %}">
 </head>
 
 <body>
-    <a href="home.html" class="back-button"><-</a>
+    <a href="{% url 'home' %}" class="back-button"><-</a>
     <div class="container">
         <h1>Universități din România</h1>
         <label for="q">Filtru (opțional):</label> <br>
@@ -30,6 +31,6 @@
         <button id="CSVbutton">Export CSV</button>
 
     </div>
-    <script src="../JS/universities_js.js"></script>
+    <script src="{% static 'JS/universities_js.js' %}"></script>
 </body>
 </html>

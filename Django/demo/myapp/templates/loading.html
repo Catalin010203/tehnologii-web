@@ -9,15 +9,16 @@
 
     <meta http-equiv="refresh" content="2;url=login.html">
 
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/loading_style.css">
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/loading_style.css' %}">
+    {% load static %}
 </head>
 
 <body>
 
     <div class="Loading-container">
 
-        <img src="../MEDIA/loading.jpg" alt="Loading..." class="Loading-image">
+        <img src="{% static 'MEDIA/loading.jpg' %}" alt="Loading..." class="Loading-image">
 
         <div class="spinner"></div>
 

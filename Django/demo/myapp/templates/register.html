@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register page</title>
-    <link rel="stylesheet" href="../CSS/register_style.css">
+    <link rel="stylesheet" href="{% static 'CSS/register_style.css' %}">
 </head>
 
 <body>
     <main class="page">
     <section class="card">
     <h1>Register</h1>
-    <form class="register-form" action="#" method="post"
+    <form class="register-form" action="{% url 'register' %}" method="post"
         enctype="multipart/form-data">
     
         <div class="row">
@@ -116,7 +117,7 @@
 
         <p class="login-link"> Ai deja cont?
 
-        <a href="login.html">Mergi la login</a></p>
+        <a href="{% url 'login' %}">Mergi la login</a></p>
 
     </form>
     </section>

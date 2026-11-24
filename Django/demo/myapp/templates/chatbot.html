@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
-    <link rel="stylesheet" href="../CSS/chatbot_style.css">
 
+    <link rel="stylesheet" href="{% static 'CSS/chatbot_style.css' %}">
+   
     <div class="container">
         <nav>
-            <a href="home.html">Acasă</a>
+            <a href="{% url 'home' %}">Acasă</a>
         </nav>
     </div>
 
@@ -25,6 +27,6 @@
         <button type="submit">Trimite</button>
     </form>
 
-    <script src="../JS/chatbot_js.js" defer></script>
+    <script src="{% static 'JS/chatbot_js.js' %}" defer></script>
 </body>
 </html>

@@ -1,9 +1,8 @@
-"use strict";
 const images = [
-    "../MEDIA/carousel1.jpg",
-    "../MEDIA/carousel2.jpg",
-    "../MEDIA/carousel3.jpg",
-    "../MEDIA/Midnight Magic.jpg"
+    "/static/MEDIA/carousel1.jpg",
+    "/static/MEDIA/carousel2.jpg",
+    "/static/MEDIA/carousel3.jpg",
+    "/static/MEDIA/Midnight Magic.jpg"
 ];
 const mainImage = document.getElementById("carousel-image");
 if (!mainImage)
@@ -14,3 +13,4 @@ function nextImage() {
     mainImage.src = images[currentIndex];
 }
 setInterval(nextImage, 3000);
+export {};

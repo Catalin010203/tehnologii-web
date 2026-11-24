@@ -2,11 +2,13 @@
 <html lang="ro">
 
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="../CSS/home_style.css">
-    <link rel="stylesheet" href="../CSS/cursor.css">
+
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
 </head>
 
 <body>
@@ -17,12 +19,11 @@
             <h1>Comunitatea de Tehnologii Web 2025</h1>
 
             <nav>
-                <a href="home.html">Acasă</a>
-                <a href="universities.html">Universități</a>
-                <a href="#">Tehnologii</a>
-                <a href="chatbot.html">ChatBot</a>
-                <a href="galerie.html">Galerie</a>
-                <a href="login.html">Logout</a>
+                <a href="{% url 'home' %}">Acasă</a>
+                <a href="{% url 'universities' %}">Universități</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+                <a href="{% url 'galerie' %}">Galerie</a>
+                <a href="{% url 'login' %}">Logout</a>
             </nav>
             
 
@@ -42,7 +43,7 @@
                     care oferă programe excelente pentru Web.
                 </p>
 
-                <a href="#" class="btn">Vezi mai mult</a>
+                <a href="{% url 'universities' %}" class="btn">Vezi mai mult</a>
 
             </div>
 
@@ -56,8 +57,8 @@
                     framework-uri moderne în industria și în educație.
                 </p>
 
-                <a href="#" class="btn">Vezi mai mult</a>
-
+                <button type="button" class="btn">Vezi mai mult</button>
+                
             </div>
 
 
@@ -70,7 +71,7 @@
                     primi răspunsuri rapide.
                 </p>
 
-                <a href="chatbot.html" class="btn">Vezi mai mult</a>
+                <a href="{% url 'chatbot' %}" class="btn">Vezi mai mult</a>
 
             </div>
 
@@ -80,7 +81,7 @@
 
     <div class="uvtImage-container">
         <div class="uvtImage">
-            <img id="uvt-image" src="../MEDIA/uvt1.jpg" alt="UVT">
+            <img id="uvt-image" src="{% static 'MEDIA/uvt1.jpg' %}" alt="UVT">
         </div>
     </div>
 
@@ -93,11 +94,11 @@
             </p>
 
             <p>
-                <a href="#">
+                <a href="{% static 'MEDIA/uvt1.jpg' %}">
                     Universitatea de Vest din Timișoara
                 </a>
                 |
-                <a href="#">
+                <a href="{% static 'MEDIA/uvt2.jpg' %}">
                     Facultatea de Informatică
                 </a>
             </p>
@@ -105,8 +106,8 @@
         </div>
 
     </footer>
-    <script src="../TS/cursor.js"></script>
-    <script type="module" src="../TS/uvtGalerie.js"></script>
+    <script src="{% static 'JS/cursor.js' %}"></script>
+    <script type="module" src="{% static 'JS/uvtGalerie.js' %}"></script>
 </body>
 
 </html>

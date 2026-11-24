@@ -1,11 +1,10 @@
 export {};
 
 const images: string[] = [
-    "../MEDIA/carousel1.jpg",
-    "../MEDIA/carousel2.jpg",
-    "../MEDIA/carousel3.jpg",
-    "../MEDIA/Midnight Magic.jpg"
-
+    "/static/MEDIA/carousel1.jpg",
+    "/static/MEDIA/carousel2.jpg",
+    "/static/MEDIA/carousel3.jpg",
+    "/static/MEDIA/Midnight Magic.jpg"
 ];
 
 const mainImage = document.getElementById("carousel-image") as HTMLImageElement;

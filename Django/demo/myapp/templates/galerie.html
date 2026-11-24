@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="{% static 'CSS/galerie.css' %}">
+
+</head>
+<body>
+    <a href="{% url 'home' %}" class="back-button"><-</a>
+    <div class="carousel-container">
+        <div class="carousel-view">
+            <img id="carousel-image" src="{% static 'MEDIA/Midnight Magic.jpg' %}" alt="Carusel">
+        </div>
+    </div>
+    <script type="module" src="{% static 'TS/galerie.js' %}"></script>
+</body>
+</html>
